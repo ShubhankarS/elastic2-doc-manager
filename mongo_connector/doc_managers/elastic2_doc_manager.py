@@ -216,8 +216,8 @@ class DocManager(DocManagerBase):
         # es6 deprecates support for multiple document types
         # using default_type for consistency
         # Will try and use multiple doc types only if explicity specified
-        self.create_multi_type = kwargs.get("create_multi_type", False)
-        self.default_type = kwargs.get("default_type", "doc")
+        self.create_multi_type = kwargs.get("createMultiType", False)
+        self.default_type = kwargs.get("defaultType", "doggg")
         self.meta_index_name = meta_index_name
         self.meta_type = meta_type if self.create_multi_type else self.default_type
 
