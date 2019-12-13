@@ -219,7 +219,7 @@ class DocManager(DocManagerBase):
         self.create_multi_type = kwargs.get("create_multi_type", False)
         self.default_type = kwargs.get("default_type", "doc")
         self.meta_index_name = meta_index_name
-        self.meta_type = meta_type if create_multi_type else self.default_type
+        self.meta_type = meta_type if self.create_multi_type else self.default_type
 
         self.unique_key = unique_key
         self.chunk_size = chunk_size
