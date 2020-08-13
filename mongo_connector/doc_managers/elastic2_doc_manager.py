@@ -217,7 +217,7 @@ class DocManager(DocManagerBase):
         # using default_type for consistency
         # Will try and use multiple doc types only if explicity specified
         self.create_multi_type = kwargs.get("createMultiType", False)
-        self.default_type = kwargs.get("defaultType", "doggg")
+        self.default_type = kwargs.get("defaultType", "doc")
         self.meta_index_name = meta_index_name
         self.meta_type = meta_type if self.create_multi_type else self.default_type
 
